@@ -38,6 +38,7 @@ export const Test = () => {
   }, [answers, current]);
 
   const marking = () => {
+    // eslint-disable-next-line array-callback-return
     answers?.map((item) => {
       if (item.correct === item.a) {
         setGrades((grades) => grades + 1);
