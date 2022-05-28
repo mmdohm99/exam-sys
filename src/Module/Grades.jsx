@@ -8,8 +8,8 @@ export const GradesProvider = ({ children }) => {
   const [final, setFinal] = useState(0);
   useEffect(() => {
     setFinal((grades * 100) / exam?.length);
-  }, [grades, exam?.legnth]);
-  // console.log(exam);
+  }, [grades, exam]);
+
   return (
     <GradesContext.Provider value={{ setGrades, grades, setFinal, final }}>
       {children}

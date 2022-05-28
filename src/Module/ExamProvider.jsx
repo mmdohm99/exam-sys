@@ -1,9 +1,8 @@
-import { createContext, useState } from "react";
+import { createContext } from "react";
 
 export const ExamContext = createContext({});
 
 export const ExamProvider = ({ children }) => {
-  const [test, setTest] = useState("play");
   const question = {
     q: "",
     a: [],

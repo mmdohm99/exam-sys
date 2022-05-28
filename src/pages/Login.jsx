@@ -23,10 +23,7 @@ export const Login = () => {
     setSignInConfirmPassword,
   } = useContext(AuthContext);
 
-  console.log(signInMail);
-  console.log(signInPassword);
-  console.log(signInConfirmPassword);
-  console.log(isFinite(signInName));
+ 
   /////////////////////////////////////////////
 
   const navigate = useNavigate();
